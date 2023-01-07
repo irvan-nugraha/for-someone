@@ -23,7 +23,6 @@
 </head>
 <body>
     <script>
-
         let name;
         function name_saver(){
             name = document.getElementById("name").value;
@@ -37,7 +36,6 @@
                 x.className = "form-input"
             }
         }
-
         document.getElementById("placer-end").innerHTML = name
     </script>
     <div class="wrapper">
@@ -144,5 +142,8 @@
             </div>
         </div>
     </section>
+    <audio id="audio" class="music-box" controls autoplay>
+        <source src="./dist/music/Until I Found You.mp3" type="audio/mpeg"/>
+    </audio>
 </body>
 </html>

@@ -76,3 +76,7 @@ body, html{
     margin: auto;
     width: 230px;
 }
+
+.music-box{
+    opacity: 0;
+}
