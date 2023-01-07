@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Someone</title>
+    
+    <!--Style-->
+    <link rel="stylesheet" href="/dist/css/style.css">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+    <!--JavaScript-->
+    <script src="/dist/js/change-page.js"></script>
+</head>
+<body>
+    <script>
+
+        let name;
+        function name_saver(){
+            name = document.getElementById("name").value;
+            var y = document.getElementById("no-1")
+            document.getElementById("placer").innerHTML = "Hey Kamu " + name;
+            var x = document.getElementById("form-input");
+            if(x.className === "form-input"){
+                x.className += " alert-exit-active";
+                y.className += " active";
+            }else{
+                x.className = "form-input"
+            }
+        }
+
+        document.getElementById("placer-end").innerHTML = name
+    </script>
+    <div class="wrapper">
+        <div id="form-input" class="form-input">
+            <center>
+                <h3>Put Your Name Please</h3>
+                <div class="input-group mb-3">
+                    <input id="name" type="text" class="form-control" placeholder="Put Your Name" aria-label="Your Name" aria-describedby="basic-addon1" />
+                </div>
+                <button onclick="name_saver()" class="btn btn-primary">Submit</button>
+            </center>
+        </div>
+    </div>
+    <section class="slider">
+        <div id="no-1" class="page">
+            <div class="box">
+                <center>
+                    <h3 id="placer"></h3>
+                    <img class="img" src="/dist/img/intro.gif" alt="" />
+                    <button onclick="toSecondPage()" class="btn btn-primary">Next</button>
+                </center>
+            </div>
+        </div>
+        <div id="no-2" class="page">
+            <div class="box">
+                <center>
+                    <h3>Yang Selalu Ngangenin Tiap Hari</h3>
+                    <img class="img" src="/dist/img/first.gif" alt="" />
+                    <button onclick="toThirdPage()" class="btn btn-primary">Next</button>
+                </center>
+            </div>
+        </div>
+        <div id="no-3" class="page">
+            <div class="box">
+                <center>
+                    <h3>Yang Kadang Bikin Nyebelin Juga</h3>
+                    <img class="img" src="/dist/img/second.gif" alt="" />
+                    <button onclick="toFourthPage()" class="btn btn-primary">Next</button>
+                </center>
+            </div>
+        </div>
+        <div id="no-4" class="page">
+            <div class="box">
+                <center>
+                    <h3>Tapi Gatau Kenapa Ga Ada Kamu Tuh Kaya Kesepian Aku Tuh</h3>
+                    <img class="img" src="/dist/img/third.gif" alt="" />
+                    <button onclick="toFifthPage()" class="btn btn-primary">Next</button>
+                </center>
+            </div>
+        </div>
+        <div id="no-5" class="page">
+            <div class="box">
+                <center>
+                    <h3>Rasanya Pengen Ndus Sama Peluk Terus Kamu</h3>
+                    <img class="img" src="/dist/img/fifth.gif" alt="" />
+                    <button onclick="toSixthPage()" class="btn btn-primary">Next</button>
+                </center>
+            </div>
+        </div>
+        <div id="no-6" class="page">
+            <div class="box">
+                <center>
+                    <h3>Aku Suka Manjain Kamu Kaya Mijitin Atau Yang Lainnya</h3>
+                    <img class="img" src="/dist/img/fourth.gif" alt="" />
+                    <button onclick="toSeventhPage()" class="btn btn-primary">Next</button>
+                </center>
+            </div>
+        </div>
+        <div id="no-7" class="page">
+            <div class="box">
+                <center>
+                    <h3>Aku Harap Kamu Bisa Selalu Ada Di Sisi Aku Tetap Support Aku Tiap Hari</h3>
+                    <img class="img" src="/dist/img/seventh.gif" alt="" />
+                    <button onclick="toEigthPage()" class="btn btn-primary">Next</button>
+                </center>
+            </div>
+        </div>
+        <div id="no-8" class="page">
+            <div class="box">
+                <center>
+                    <h3>Hingga Aku Bisa Melamar dan Membawa Kamu Ke Pelaminan Yang Kita Harapkan Bersama</h3>
+                    <img class="img" src="/dist/img/pre-ending.gif" alt="" />
+                    <button onclick="toNinePage()" class="btn btn-primary">Next</button>
+                </center>
+            </div>
+        </div>
+        <div id="no-9" class="page">
+            <div class="box">
+                <center>
+                    <h3>Maafin Cuma Bisa Bikinin Template Ini Dengan Seadanya</h3>
+                    <img class="img" src="/dist/img/for-pre-ending.gif" alt="" />
+                    <button onclick="toTenthPage()" class="btn btn-primary">Next</button>
+                </center>
+            </div>
+        </div>
+        <div id="no-10" class="page">
+            <div class="box">
+                <center>
+                    <h3>I Love You Sayang Kuh</h3>
+                    <h4 id="placer-end"></h4>
+                    <img class="end-picture" src="/dist/img/ending.jpeg" alt="" />
+                    <h4>Stay Strong Together Darling..</h4>
+                </center>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
